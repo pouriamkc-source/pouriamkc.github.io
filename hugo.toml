@@ -1,4 +1,4 @@
-﻿baseURL = 'https://pouriamkc.github.io/'
+﻿baseURL = 'https://pouriamkc-source.github.io/pouriamkc.github.io/'
 locale = 'fa-IR'
 defaultContentLanguage = 'fa'
 title = 'Pouria MKC'
@@ -12,4 +12,6 @@ enableRobotsTXT = true
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+
 

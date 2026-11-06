@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Tags on Pouria MKC</title>
+		<link>https://pouriamkc-source.github.io/pouriamkc.github.io/tags/</link>
+		<description>Recent content in Tags on Pouria MKC</description>
+		<generator>Hugo</generator>
+		<language>fa-IR</language>
+		
+		
+		
+		
+			<atom:link href="https://pouriamkc-source.github.io/pouriamkc.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	</channel>
+</rss>
