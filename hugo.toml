@@ -1,0 +1,15 @@
+﻿baseURL = 'https://pouriamkc.github.io/'
+locale = 'fa-IR'
+defaultContentLanguage = 'fa'
+title = 'Pouria MKC'
+enableRobotsTXT = true
+
+[params]
+  description = 'وب‌سایت شخصی پوریا؛ جایی برای کنجکاوی، کشف و یادگیری'
+  author = 'Pouria MKC'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+

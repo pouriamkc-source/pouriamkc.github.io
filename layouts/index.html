@@ -1,0 +1,32 @@
+﻿{{ define "main" }}
+<section class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">PERSONAL JOURNAL · IDEAS · DISCOVERY</p>
+    <h1>هر سؤال،<br><span>یک ماجرا.</span></h1>
+    <p>به دنیای Pouria MKC خوش آمدی؛ جایی برای کنجکاوی، کشف و نگاه دوباره به چیزهایی که اطراف ما اتفاق می‌افتند. از علم و فرهنگ تا هنر، زندگی و کسب‌وکار.</p>
+    <a class="button" href="{{ "/posts/" | relURL }}">مطالعه نوشته‌ها ←</a>
+  </div>
+  <div class="hero-art">
+    <div class="art-mark">MKC</div>
+    <div class="art-caption">CURIOSITY IS AN ADVENTURE</div>
+  </div>
+</section>
+
+<section class="section-head">
+  <h2>تازه‌ترین نوشته‌ها</h2>
+  <a href="{{ "/posts/" | relURL }}">همه نوشته‌ها ←</a>
+</section>
+
+<div class="posts">
+{{ range first 3 (where site.RegularPages "Section" "posts") }}
+  <article class="post-card">
+    <p class="date">{{ .Date.Format "2006/01/02" }}</p>
+    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    <p>{{ .Summary }}</p>
+    <a class="read-more" href="{{ .RelPermalink }}">ادامه مطلب ←</a>
+  </article>
+{{ else }}
+  <p>به‌زودی اولین نوشته منتشر می‌شود.</p>
+{{ end }}
+</div>
+{{ end }}

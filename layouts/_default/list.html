@@ -1,0 +1,16 @@
+﻿{{ define "main" }}
+<section class="page-intro">
+  <p class="eyebrow">THE KEVAR JOURNAL</p>
+  <h1>{{ .Title }}</h1>
+  <p>ایده‌ها، کشف‌ها و داستان‌هایی برای کنجکاوتر دیدن جهان.</p>
+</section>
+<div class="posts">
+{{ range .Pages }}
+  <article class="post-card">
+    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    <p>{{ .Summary }}</p>
+    <a class="read-more" href="{{ .RelPermalink }}">ادامه مطلب ←</a>
+  </article>
+{{ end }}
+</div>
+{{ end }}

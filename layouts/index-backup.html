@@ -1,0 +1,26 @@
+﻿{{ define "main" }}
+<section class="hero">
+  <p class="eyebrow">PERSONAL JOURNAL · IDEAS · DISCOVERY</p>
+  <h1>هر سؤال،<br><span>یک ماجرا.</span></h1>
+  <p>اینجا درباره چیزهایی می‌نویسم که ارزش کشف کردن دارند؛ از علم و فرهنگ تا زندگی، هنر و کسب‌وکار.</p>
+  <a class="button" href="/posts/">مطالعه نوشته‌ها ←</a>
+</section>
+
+<section class="section-head">
+  <h2>تازه‌ترین نوشته‌ها</h2>
+  <a href="/posts/">همه نوشته‌ها</a>
+</section>
+
+<div class="posts">
+{{ range first 3 (where site.RegularPages "Section" "posts") }}
+  <article class="post-card">
+    <p class="date">{{ .Date.Format "2006/01/02" }}</p>
+    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    <p>{{ .Summary }}</p>
+    <a class="read-more" href="{{ .RelPermalink }}">ادامه مطلب ←</a>
+  </article>
+{{ else }}
+  <p>به‌زودی اولین نوشته منتشر می‌شود.</p>
+{{ end }}
+</div>
+{{ end }}

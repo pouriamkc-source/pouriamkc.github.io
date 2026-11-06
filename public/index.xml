@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Pouria MKC</title>
+		<link>http://localhost:1313/</link>
+		<description>Recent content on Pouria MKC</description>
+		<generator>Hugo</generator>
+		<language>fa-IR</language>
+		
+		
+		
+		
+			<lastBuildDate>Fri, 06 Nov 2026 20:00:00 +0330</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>شروع یک ماجراجویی تازه</title>
+				<link>http://localhost:1313/posts/first-note/</link>
+				<pubDate>Fri, 06 Nov 2026 20:00:00 +0330</pubDate>
+				<guid>http://localhost:1313/posts/first-note/</guid>
+				<description>&lt;p&gt;به وب‌سایت Pouria MKC خوش آمدید!&lt;/p&gt;&#xA;&lt;p&gt;این وب‌سایت جایی برای کنجکاوی، یادگیری و نگاه دوباره به موضوعات مختلف دنیاست.&lt;/p&gt;&#xA;&lt;p&gt;قرار است اینجا درباره علم، هنر، سینما، فرهنگ، سبک زندگی و کسب‌وکار بنویسیم.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;هر سؤال، یک ماجرا.&lt;/strong&gt;&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ .Site.Params.description }}">
+  <meta name="theme-color" content="#f6f2e9">
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+  <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="{{ "/" | relURL }}">Pouria <span>MKC</span></a>
+    <nav>
+      <a href="{{ "/" | relURL }}">خانه</a>
+      <a href="{{ "/posts/" | relURL }}">مقالات</a>
+      <a href="{{ "/about/" | relURL }}">درباره من</a>
+    </nav>
+  </header>
+  <main>
+    {{ block "main" . }}{{ end }}
+  </main>
+  <footer>
+    <p>Pouria MKC © {{ now.Year }} — هر سؤال، یک ماجرا.</p>
+  </footer>
+</body>
+</html>
